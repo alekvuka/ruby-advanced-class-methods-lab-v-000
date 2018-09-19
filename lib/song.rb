@@ -57,7 +57,7 @@ class Song
 
     song_added = self.create_by_name(name)
     song_added.artist_name = artist 
-
+  end 
 
 
 
