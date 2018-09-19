@@ -44,7 +44,7 @@ class Song
 
   def self.alphabetical
 
-  binding.pry
+  #binding.pry
 
   @@all.sort_by { |song| song.name}
 
