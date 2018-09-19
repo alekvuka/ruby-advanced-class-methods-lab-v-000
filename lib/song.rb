@@ -26,6 +26,7 @@ class Song
     #binding.pry
   end
 
+
   def self.find_by_name(name)
 
     if @@all.empty? == false
@@ -41,48 +42,33 @@ class Song
 
   end
 
+  def self.alphabetical
+
+=beging
+    sorted_song_array = Array.new
+    @@all.each do |song|
+      sorted_name_array << song.name
+    end
+
+    sorted_name_array = sorted_song_array.sort
+=end 
+
+  @@all.sort.by{ |n| n.name}
+
+  end 
+
+  #def self.new_from_filename
+    
+
+
 
   def self.find_or_create_by_name(name)
     #binding.pry
-=begin
-    @@all.each do |song|
-      #binding.pry
-      if song.name == name
-        return self.find_by_name(name)
-      end
-    end
-    self.create_by_name(name)
-    #binding.pry
-=end
-
-=begin
-    if self.find_by_name(name) == false
-      create_by_name(name)
-    end
-    self.find_by_name(name)
-=end
   self.find_by_name(name) || self.create_by_name(name)
 
   end
 
 
-=begin
-  def self.find_or_create_by_name(name)
-
-    #binding.pry
-
-    @@all.each do |song|
-      #binding.pry
-      if song.name == name
-        return self.find_by_name(name)
-      end
-    end
-
-    self.create_by_name(name)
-    #binding.pry
-
-  end
-=end 
   def self.all
     @@all
   end
