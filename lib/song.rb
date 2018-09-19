@@ -54,8 +54,8 @@ class Song
 
     binding.pry
 
-    artist = name_artist[0]
-    name = name_artist[1]
+    artist = artist_name[0]
+    name = artist_name[1]
 
     song_added = self.create_by_name(name)
     song_added.artist_name = artist
