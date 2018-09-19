@@ -52,6 +52,8 @@ class Song
     file_name.chomp(".mp3")
     name_artist = file_name.split("-")
 
+    binding.pry
+
     artist = name_artist[0]
     name = name_artist[1]
 
