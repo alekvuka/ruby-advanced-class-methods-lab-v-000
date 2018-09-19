@@ -44,10 +44,11 @@ class Song
 
   def self.alphabetical
 
+  binding.pry
 
   @@all.sort.by{ |song| song.name}
 
-  binding.pry
+
 
   end
 
