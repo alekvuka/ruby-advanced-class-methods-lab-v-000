@@ -52,10 +52,10 @@ class Song
     whithout_mp3 = file_name.chomp(".mp3")
     artist_name = whithout_mp3.split("-")
 
-    binding.pry
-
     artist = artist_name[0]
     name = artist_name[1]
+
+    binding.pry
 
     song_added = self.create_by_name(name)
     song_added.artist_name = artist
