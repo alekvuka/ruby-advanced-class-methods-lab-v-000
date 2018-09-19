@@ -46,7 +46,7 @@ class Song
 
   binding.pry
 
-  @@all.sort.by{ |song| song.name}
+  @@all.sort_by { |song| song.name}
 
 
 
