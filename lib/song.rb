@@ -52,8 +52,8 @@ class Song
     whithout_mp3 = file_name.chomp(".mp3")
     artist_name = whithout_mp3.split("-")
 
-    artist = artist_name[0].chomp("")
-    name = artist_name[1].chomp("")
+    artist = artist_name[0].chomp(" ")
+    name = artist_name[1].chomp(" ")
 
     binding.pry
 
