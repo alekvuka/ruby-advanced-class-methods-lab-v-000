@@ -44,21 +44,13 @@ class Song
 
   def self.alphabetical
 
-=beging
-    sorted_song_array = Array.new
-    @@all.each do |song|
-      sorted_name_array << song.name
-    end
-
-    sorted_name_array = sorted_song_array.sort
-=end 
 
   @@all.sort.by{ |n| n.name}
 
-  end 
+  end
 
   #def self.new_from_filename
-    
+
 
 
 
